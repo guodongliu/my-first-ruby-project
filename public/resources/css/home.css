@@ -1,0 +1,10 @@
+#home{
+    left:25%;
+    top:30% ;
+    position: absolute;
+}
+#home-content{
+    left:43%;
+    top:43% ;
+    position: absolute;
+}

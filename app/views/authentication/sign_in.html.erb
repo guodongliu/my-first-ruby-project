@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <%= javascript_include_tag '/javascripts/jquery-1.9.1.min.js' %>
+  <%= stylesheet_link_tag '/resources/css/sign_in.css' %>
+  <script type="text/javascript">
+      $(document).ready(function(){
+
+      })
+  </script>
+</head>
+<body>
+<div id="login">
+  <div id="login-content">
+    <form method="post" action="/sign_in">
+      <p>
+        <label><%= t 'login.user_name' %></label>
+        <input value="" name="username" class="text-input" type="text"/>
+      </p>
+      <p>
+        <label><%= t 'login.password' %></label>
+        <input name="password" class="text-input" type="password"/>
+      </p>
+      <p>
+        <%= link_to t('login.register'), new_user_path %>
+        <input class="button" type="submit" value="login"/>
+        <input type="hidden" id="fromUrl" name="fromUrl" value="<%= @from_url %>" />
+      </p>
+    </form>
+  </div>
+</div>
+</body>
+</html>

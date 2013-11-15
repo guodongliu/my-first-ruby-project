@@ -36,6 +36,7 @@ GEM
       multi_json (~> 1.0)
     ansi (1.4.3)
     arel (2.2.3)
+    bcrypt-ruby (3.1.2-java)
     bouncy-castle-java (1.5.0147)
     builder (3.0.4)
     coffee-rails (3.1.1)
@@ -124,6 +125,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbcmysql-adapter
+  bcrypt-ruby
   coffee-rails (~> 3.1.1)
   jquery-rails
   jruby-openssl
